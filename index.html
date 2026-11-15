@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Đồ Ăn - Bàn 1 đến 26</title>
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h2>Chọn Bàn Order</h2>
+    <div class="table-grid" id="table-list"></div>
+
+    <div id="order-section">
+      <h3 id="selected-table-title">Đang chọn: Bàn 1</h3>
+
+      <div id="menu-list"></div>
+
+      <div style="margin-top: 15px">
+        <label for="custom-items"><strong>Món ngoài thực đơn:</strong></label>
+        <textarea
+          id="custom-items"
+          placeholder="Nhập món muốn gọi, mỗi món một dòng (ví dụ: 2 phần gà nướng)"
+        ></textarea>
+      </div>
+
+      <div style="margin-top: 15px">
+        <label for="order-note"><strong>Ghi chú món ăn:</strong></label>
+        <textarea
+          id="order-note"
+          placeholder="Ví dụ: Không hành, ít cay, thêm nước chấm..."
+        ></textarea>
+      </div>
+
+      <button class="send-btn" onclick="sendToZalo()">
+        Gửi thực đơn qua Zalo (0835324126)
+      </button>
+    </div>
+
+    <!-- Liên kết file JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

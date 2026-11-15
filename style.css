@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 15px;
+  background-color: #f4f4f4;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+/* Lưới nút chọn bàn */
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.table-btn {
+  padding: 15px 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+.table-btn.active {
+  background-color: #0068ff;
+  /* Màu xanh Zalo */
+  color: white;
+  border-color: #0054cc;
+}
+
+/* Khu vực chọn món (ẩn mặc định) */
+#order-section {
+  display: none;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 17px;
+}
+
+.qty-controls button {
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.qty-controls span {
+  display: inline-block;
+  width: 35px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: #0068ff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.send-btn:active {
+  background-color: #004bb5;
+}
